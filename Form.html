@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Forms</title>
+
+    <style>
+        h1 {
+            font-size: 2.5em;
+            color: blue;
+            text-transform: uppercase;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            text-align: center;
+            margin-top: 1em;
+        }
+
+        body {
+            padding: 0px 0px 0px;
+            /* background: rgba(5, 143, 208, 0.1); */
+            font-size: 14px;
+            line-height: 1.42857143;
+            color: #333;
+            overflow-x: hidden;
+            /* background: rgba(214, 231, 247, 0.8) !important; */
+            margin: 0px auto;
+            padding: 0px 0px 120px;
+            position: relative;
+
+        }
+
+        form {
+            display: block;
+            box-sizing: inherit;
+            padding-right: 85px;
+            padding-left: 85px;
+            margin-right: auto;
+            margin-left: auto;
+            /* text-align: center; */
+            width: 70%;
+            max-width: 100%;
+            border: 1px solid gray;
+
+        }
+
+        h2 {
+            color: rgb(31, 32, 66);
+            
+            text-align: center;
+            font-size: 25px;
+            text-transform: uppercase;
+            margin-left: 0;
+            margin-top: 0;
+            padding: .5em;
+        }
+
+        #first {
+            display: inline-block;
+            /* vertical-align: top; */
+            /* float: left; */
+
+        }
+
+        .content {
+            /* background-color: #FFFFFF; */
+            /* background-image: none;
+            border: 1px solid #ccc; */
+        
+            width: 100%;
+            /* height:10px; */
+            padding: 6px 12px;
+            border-radius: 1px;
+            color: #333;
+            /* display: block; */
+            padding: 2px 12px;
+
+            
+        }
+
+        #eb{
+             position: relative;
+            height: 35px;
+            /* float: right; */
+            padding: 0.8%;
+            width: 54%;
+             float: right;
+            
+        }
+        #id{
+            position: relative;
+            height: 35px;
+            /* float: right; */
+            padding: 0.8%;
+            width: 52%;
+             float: right;
+        }
+        #roll{
+            position: relative;
+            height: 15px;
+            /* float: right; */
+            padding: 0.8%;
+            width: 52%;
+             float: right;
+            
+        }
+        #yp{
+            position: relative;
+            height: 35px;
+            /* float: right; */
+            padding: 0.8%;
+            width: 54%;
+             float: right;
+                     
+        }
+        #quali{
+            position: relative;
+            height: 35px;
+            /* float: right; */
+            padding: 0.8%;
+            width: 52%;
+             float: right;
+            
+        }
+        #st{
+            position: relative;
+            height: 35px;
+            /* float: right; */
+            padding: 0.8%;
+            width: 52%;
+             float: right;
+        }
+        #ch {
+            display:inline-block;
+            /* position: relative; */
+            /* left: 29%; */
+            float: right;
+            padding-right: 42%;
+
+        }
+
+        #gd {
+            display: inline-block;
+            /* position: relative; */
+            /* left: 39%; */
+            float: right;
+            padding-right: 32%;
+        }
+        .content input{
+            position: relative;
+            height: 15px;
+            float: right;
+            padding: 0.8%;
+            width: 50%;
+        }
+        #btn {
+            text-align: center;
+            margin-bottom: 8%;
+            padding-bottom: 5%;
+        }
+
+        .bton {
+            text-align: center;
+            width: 5em;
+            height: 3em;
+            margin: 0.8em;
+            padding: 0.5em;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            background-color: rgb(15, 67, 145);
+
+
+        }
+
+        .bton:hover {
+            background-color: rgb(192, 60, 60);
+        }
+
+        p {
+            color: red;
+            font-size: 15px;
+            margin-bottom: 5%;
+        }
+
+        li {
+            list-style: lower-roman;
+        }
+
+        #lbl{
+            width: 100%;
+            padding: 6px 12px;
+            border-radius: 1px;
+            color: #333;
+            /* display: inline-block; */
+            padding: 2px 12px;
+
+        }
+        #ged{
+            width: 100%;
+            padding: 6px 12px;
+            border-radius: 1px;
+            color: #333;
+            /* display:inline-block; */
+            padding: 2px 12px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>My First Form<h1></h1>
+
+
+
+        <form>
+
+            <h2>BASIC DETAILS</h2>
+
+            <section id="first" class="fst">
+
+                <P> NOTE: Candidates must be cautious while filling up Registration details. Your candidature may get
+                    cancelled in
+                    case incorrect/ wrong information is furnished</P>
+
+
+                <label id="lbl">
+                    1. Do you have Aadhaar? *
+                </label>
+                <div id="ch">
+                    <label for="choice1">
+                        <input id="choice1" type="radio" name="aadhar" value="yes" required>Yes
+                    </label>
+
+                    <label for="choice2">
+                        <input id="choice2" type="radio" name="aadhar" value="no" required>No
+                    </label>
+
+                </div><br><br><br>
+
+
+                <div class="content">
+                    <label for="adhar" id="adharnumber">
+                        1a. Aadhaar Number * </label>
+                    <input id="adhars" type="text" name="aadharnumber" maxlength="12" required>
+
+                </div><br><br>
+
+
+                <div class="content">
+                    <label for="vadhar">
+                        1b. Verify Aadhaar Number * </label>
+                    <input id="vadhar" type="text" name="aadharnumber" maxlength="12" required>
+
+
+                </div class="content"><br><br>
+
+                <div class="content">
+                    <label for="id">
+                        1c. Type of ID
+                    </label>
+
+                    <select id="id" name="idname">
+                        <option>--select--</option>
+                        <option value="drivinglicence">Driving Licence</option>
+                        <option value="pancard">Pancard</option>
+                        <option value="voterid">Voter ID</option>
+                        <option value="passport">Passport</option>
+                        <option value="collegeid">College ID Card</option>
+                    </select>
+
+                </div><br><br>
+
+                <div class="content">
+                    <label for="idnumber">
+                        1d. ID Number
+                    </label>
+
+                    <input id="idnumber" type="text" name="idnumber">
+
+                </div><br><br>
+
+                <div class="content">
+                    <label for="fname">
+                        2a. Name *
+                    </label>
+
+                    <input id="fname" type="text" name="name" required>
+
+                </div><br><br>
+
+                <div class="content">
+
+                    <label for="vname">
+                        2b. Verify Name *
+                    </label>
+
+                    <input id="vname" type="text" name="name" required>
+
+                </div><br><br>
+
+                <div class="content">
+
+                    <label for="pname">
+                        3. Fathe Name *
+                    </label>
+
+                    <input class="pname" type="text" required>
+
+                </div><br><br>
+
+                <div class="content">
+
+                    <label for="mname">
+                        4. Mother Name *
+                    </label>
+
+                    <input id="mname" type="text" required>
+
+                </div><br><br>
+
+
+                <div class="content">
+
+                    <label for="db">
+                        5. Date of Birth *
+                    </label>
+
+                    <input id="db" type="date" required>
+
+                </div><br><br>
+
+                <div class="content">
+
+                    <label for="ed">
+                        6. Matriculation Examination details : <br><br>
+                    </label><br>
+
+                    <ul>
+
+                        <li>
+                            <label for="eb">
+                                Education Board *
+                            </label>
+
+                            <select id="eb" class="edb" name="educationboard">
+                                <option>--Select--</option>
+                                <option value="cbse">CBSE</option>
+                                <option value="stateboard">State Board</option>
+                                <option value="nios">NIOS</option>
+
+                            </select>
+
+                        </li><br><br>
+
+                        <li>
+                            <label for="roll">
+                                Roll Number *
+                            </label>
+
+                            <input id="roll" class="rln" type="text" required>
+
+                        </li><br><br>
+
+                        <li>
+                            <label for="yp">
+                                Year of Passing *
+                            </label>
+
+                            <select id="yp" class="yop" name="passingyear">
+                                <option>--select--</option>
+                                <option value="2015">2015</option>
+                                <option value="2016">2016</option>
+                                <option value="2017">2017</option>
+                                <option value="2018">2018</option>
+                                <option value="2019">2019</option>
+                                <option value="2020">2020</option>
+                                <option value="2021">2021</option>
+                                <option value="2022">2022</option>
+                            </select>
+                        </li>
+
+                    </ul>
+
+                </div><br><br>
+
+
+                <label id="ged">
+                    7. Gender *
+                </label>
+                <div id="gd">
+
+                    <label for="fchoice">
+                        <input id="fchoice" type="radio" name="gender" value="male">Male
+                    </label>
+
+                    <label for="schoice">
+                        <input type="radio" name="gender" value="female">Female
+                    </label>
+
+                    <label for="tchoice">
+                        <input type="radio" name="gender" value="other">Other
+                    </label>
+                </div><br><br><br>
+
+
+
+                <div class="content">
+
+                    <label for="quali">
+                        8. Level of Educational Qualification *
+                    </label>
+
+                    <select id="quali" name="qualification">
+                        <option>--select--</option>
+                        <option value="matriculation">Matriculation</option>
+                        <option value="highersecondary">Higher Secondary</option>
+                        <option value="diploma">Diploma</option>
+                        <option value="graduation">Graduation</option>
+                        <option value="postgraduation">Post Graduation</option>
+                        <option value="phd">Ph.D</option>
+                    </select>
+
+                </div><br><br>
+
+                <div class="content">
+
+                    <label for="mo">
+                        9a. Mobile Number *
+                    </label>
+
+                    <input id="mo" type="text" required maxlength="10">
+
+                </div><br><br>
+
+                <div class="content">
+
+                    <label for="vmo">
+                        9b. Verify Mobile Number *
+                    </label>
+
+                    <input id="vmo" type="text" required maxlength="10">
+
+                </div><br><br>
+
+                <div class="content">
+
+                    <label for="em">
+                        10a. Email ID *
+                    </label>
+
+                    <input id="em" type="email" required>
+
+                </div><br><br>
+
+                <div class="content">
+
+                    <label for="vem">
+                        10b. Verify Email ID *
+                    </label>
+
+                    <input id="vem" type="email" required>
+
+                </div><br><br>
+
+                <div class="content">
+
+                    <label for="st">
+                        11. State / UT *
+                    </label>
+
+                    <select id="st" name="state">
+                        <option>--Select--</option>
+                        <option value="andamanandnicobar">Andman and Nicobar</option>
+                        <option value="delhi">Delhi</option>
+                        <option value="gujarat">Gujrat</option>
+                        <option value="maharashtra">Maharashtra</option>
+                        <option value="punjab">Punjab</option>
+                        <option value="meghalay">Meghalay</option>
+                        <option value="bihar">Bihar</option>
+                        <option value="utarpradesh">Utar Pradesh</option>
+                        <option value="tamilnadu">Tamilnadu</option>
+                        <option value="kerala">Kerala</option>
+                        <option value="goa">Goa</option>
+                        <option value="lakshdweep">Lakshdweep</option>
+                        <option value="ladakh">Ladakh</option>
+                    </select>
+
+                </div><br><br>
+
+            </section>
+
+            <section id="btn" class="fst">
+                <input id="sub" class="bton" type="submit" value="Save">
+                <input id="res" class="bton" type="reset" value="Reset">
+                <input is="clos" class="bton" type="button" value="Close">
+            </section>
+
+        </form>
+
+</body>
+
+</html>
